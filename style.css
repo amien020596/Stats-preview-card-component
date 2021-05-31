@@ -1,0 +1,162 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  color:hsl(0, 0%, 100%);
+}
+.card{
+  border:1px solid hsl(244, 38%, 16%);
+  background-color:hsl(244, 38%, 16%);
+  width:1024px;
+  height: auto;
+  position:absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 5px;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.info-card{
+  box-sizing: border-box;
+  padding:40px 60px 40px 40px;
+
+}
+.info{
+  color:hsla(0, 0%, 100%, 0.75);
+}
+.info h1 > span{
+  color:hsl(277, 64%, 61%);
+}
+.info > p {
+  margin-top:30px;
+}
+.card .images-card{
+  background: url(./images/image-header-desktop.jpg) #aa5cdb;
+  background-repeat: no-repeat;
+  background-blend-mode:multiply;
+  background-size: 100%;
+  width:100%;
+  height: auto;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.statistic{
+  margin-top: 20px;
+  display: flex;
+  width: inherit;
+  flex-direction: row;
+  justify-content: space-between;
+  color:hsla(0, 0%, 100%, 0.6);
+}
+.statistic .company{
+  display: block;
+  text-transform: uppercase;
+}
+.statistic .company > span{
+  display: inherit;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+.statistic .templates{
+  display: block;
+  text-transform: uppercase;
+}
+
+.statistic .templates > span{
+  display: inherit;
+  font-weight: 700;
+  font-size: 1.2rem;
+ 
+}
+.statistic .queries{
+  display: block;
+  text-transform: uppercase;
+}
+.statistic .queries > span{
+  display: inherit;
+  font-weight: 700;
+  font-size: 1.2rem;
+  
+}
+
+@media only screen and (max-width: 375px) {
+  
+  .card{
+    height: auto;
+    display: flex;
+    width: 325px;
+    position: absolute;
+    border-radius: 5px;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-10%);
+    flex-direction: column;
+  }
+
+  .card h1 >span{
+    color:hsl(277, 64%, 61%);
+  }
+
+  .statistic{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .statictic > .company{
+    color:#000000;
+  }
+
+  .card .images-card{
+    background-image: url(./images/image-header-mobile.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:100%;
+    height: 239px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+  }
+
+  .card .info-card{
+    width: 100%;
+    height:auto;
+    padding:35px 35px;
+  }
+  .card .info-card .info p{
+    margin-top:20px;
+  }
+  .card .info{
+    text-align: center;
+  }
+  .card .statistic{
+    box-sizing: border-box;
+    margin-top:20px;
+  }
+  .card .statistic span{
+    font-weight: 700;
+  }
+  .card .statistic .company{
+    text-align: center;
+    margin-top:20px;
+  }
+  .card .statistic .templates{
+    text-align: center;
+    margin-top:20px;
+  }
+  .card .statistic .queries{
+    text-align: center;
+    margin-top:20px;
+  }
+
+}
+
+@media only screen and (max-width: 1440px) {
+  
+}
